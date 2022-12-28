@@ -1,0 +1,193 @@
+
+.navbar_top{
+    background-color: #0C4B35;    
+    height: 59px;
+    display: flex;
+    align-items: center;
+    .navbar_top_text{
+        display: flex;
+        align-items: center;                
+        height: 25px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        margin:17px 200px;      
+        ul{
+            display: flex;            
+            width: 739px;
+            height: 25px;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                text-decoration: none;
+                display: flex;
+                color: white;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .language{
+            display: flex;
+            width: 66px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 213px;
+            a{
+                width: 66px;
+                height: 25px;
+                display: flex;
+                text-decoration: none;
+                color: white;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+                margin:17px 251px;                
+                p{                
+                    margin-right: 5px;
+                }
+            }
+        }
+    }    
+}
+.navbar{
+    height: 85px;
+    .navbar_line{
+        display: flex;
+        align-items: center;
+        margin:15px 205px;
+        width: 1100px;
+        .logo{
+            width: 120px;
+            height: 55px;
+            position: relative;
+           
+        }
+        .logo1{
+            position: absolute;
+            left: 304px;
+            top: 77px;
+        }
+        .drops{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            margin-left: 120px;
+            width: 500px;
+            height: 20px;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                :hover{
+                    color: #00730C;
+                    .img2{
+                        opacity: 100;                        
+                    }
+                }                
+                a{
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    }
+                    img{                        
+                        padding-left: 5px;                                              
+                    }
+                    .img2{
+                        position: absolute;
+                        right: 0px;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        button{
+            width: 170px;
+            height: 50px;
+            background-image: url(/02_HomePage/img/Call_Button.svg);
+            border-radius: 5px;
+            border: 0;
+            margin-left: 100px;
+        }
+        .menu{
+            display: none;
+        }
+    }
+@media(max-width:768px){
+    .navbar_top{
+        .navbar_top_text{
+            margin-left: 20px;
+            width: 335px;
+            ul{
+                display: flex;
+                justify-content: flex-start; 
+                width: 220px;               
+                a{
+                    margin-right: 20px;
+                    p{
+                       font-size: 0; 
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .language{
+                margin-left: 0px;
+                .language_p{
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        
+    }
+    .navbar{
+        height: 70px;
+        .navbar_line{
+            width: 320px;
+            height: 40px;
+            margin: 15px;
+            
+            .logo{
+                width: 90px;
+                height: 40px;
+            }
+            .logo1{
+                left: 86px;
+                top: 71px; 
+            }
+            .drops{
+                display: none;                
+            }            
+            button{
+                width: 40px;
+                height: 34px;
+                background-image: url(/02_HomePage/img/Call_Button_mobile.svg);
+                border-radius: 5px;
+                border: 0;
+                margin-left: 80px;
+            }
+            .menu{
+                display: flex;
+                margin-left: 40px;
+                background-image: url(/02_HomePage/img/menu.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+            }
+        }
+    }
+}
