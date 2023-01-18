@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .navbar_top {
   background-color: #0c4b35;
   height: 59px;
@@ -32,13 +37,13 @@
 }
 .navbar_top .navbar_top_text .language {
   display: flex;
-  width: 66px;
+  width: 45px;
   align-items: center;
   justify-content: center;
   margin-left: 213px;
 }
 .navbar_top .navbar_top_text .language a {
-  width: 66px;
+  width: 45px;
   height: 25px;
   display: flex;
   text-decoration: none;
@@ -61,7 +66,7 @@
   display: flex;
   align-items: center;
   margin: 15px 205px;
-  width: 1100px;
+  width: 290px;
 }
 .navbar .navbar_line .logo {
   width: 120px;
@@ -87,6 +92,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 500px;
 }
 .navbar .navbar_line .drops ul :hover {
   color: #00730c;
@@ -113,10 +119,11 @@
 .navbar button {
   width: 170px;
   height: 50px;
-  background-image: url(../Plants/img/Call_Button.svg);
+  background-image: url(/Plants/img/Call_Button.svg);
   border-radius: 5px;
   border: 0;
   margin-left: 100px;
+  flex-shrink: 0;
 }
 .navbar .menu {
   display: none;
@@ -143,7 +150,7 @@
   width: 550px;
   height: 586px;
   margin-left: 5px;
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 .frame .frame_menu .frame_menu_first {
   display: flex;
@@ -256,35 +263,36 @@
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
-  width: 1200px;
+  width: 100%;
 }
-.services .cards .first {
-  margin-bottom: 30px;
-}
-.services .cards .line {
+.services .cards ul {
   display: flex;
-  justify-content: space-between;
-  padding-left: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
 }
-.services .cards .line .green {
-  background-color: #00730C;
-}
-.services .cards .line .green p {
-  color: white;
-}
-.services .cards .line .green .img_white {
+.services .cards ul .img_white {
   display: none;
 }
-.services .cards .line .box {
+.services .cards ul :hover {
+  background-color: #00730C;
+  color: white;
+}
+.services .cards ul :hover .img_white {
+  display: block;
+  position: absolute;
+}
+.services .cards ul li {
   width: 290px;
   height: 366px;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 }
-.services .cards .line .box .text_icon {
+.services .cards ul li .text_icon {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -294,12 +302,7 @@
   height: 247px;
   padding: 0;
 }
-.services .cards .line .box .text_icon .img {
-  width: 70px;
-  height: 70px;
-  left: 40px;
-}
-.services .cards .line .box .text_icon .serv {
+.services .cards ul li .text_icon .serv {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -307,7 +310,7 @@
   line-height: 33px;
   margin-top: 50px;
 }
-.services .cards .line .box .text_icon .just_text {
+.services .cards ul li .text_icon .just_text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -632,30 +635,15 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .services .cards .first {
-    margin-bottom: 0px;
-  }
-  .services .cards .line {
+  .services .cards ul {
     display: flex;
     flex-direction: column;
   }
-  .services .cards .line .green {
-    background-color: white;
-  }
-  .services .cards .line .green p {
-    color: black;
-  }
-  .services .cards .line .green .img {
-    display: none;
-  }
-  .services .cards .line .green .img_white {
-    display: block;
-  }
-  .services .cards .line .box {
+  .services .cards ul li {
     height: 116px;
     width: 260px;
   }
-  .services .cards .line .box .text_icon {
+  .services .cards ul li .text_icon {
     height: 76px;
     width: 240px;
     display: flex;
@@ -663,14 +651,14 @@
     align-items: flex-start;
     position: relative;
   }
-  .services .cards .line .box .text_icon img {
+  .services .cards ul li .text_icon img {
     width: 50px;
     height: 50px;
     position: absolute;
     top: 17px;
     left: 7px;
   }
-  .services .cards .line .box .text_icon .serv {
+  .services .cards ul li .text_icon .serv {
     font-size: 12px;
     margin-top: 0px;
     width: 170px;
@@ -678,7 +666,7 @@
     left: 65px;
     text-align: start;
   }
-  .services .cards .line .box .text_icon .just_text {
+  .services .cards ul li .text_icon .just_text {
     font-weight: 400;
     font-size: 8px;
     line-height: 22px;
@@ -693,7 +681,7 @@
   .frame2 {
     margin-top: 50px;
     display: flex;
-    width: 326px;
+    width: 320px;
     height: 1100px;
     padding: 0;
   }
@@ -701,7 +689,7 @@
     display: none;
   }
   .frame2 .about_us {
-    width: 326px;
+    width: 320px;
     height: 1100px;
     margin: 0;
     display: flex;

@@ -1,8 +1,14 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .navbar_top {
   background-color: #0c4b35;
   height: 59px;
   display: flex;
   align-items: center;
+  
   .navbar_top_text {
     display: flex;
     align-items: center;
@@ -13,6 +19,7 @@
     font-size: 14px;
     line-height: 25px;
     margin: 17px 200px;
+    
     ul {
       display: flex;
       width: 739px;
@@ -30,12 +37,12 @@
     }
     .language {
       display: flex;
-      width: 66px;
+      width: 45px;
       align-items: center;
       justify-content: center;
       margin-left: 213px;
       a {
-        width: 66px;
+        width: 45px;
         height: 25px;
         display: flex;
         text-decoration: none;
@@ -59,7 +66,7 @@
     display: flex;
     align-items: center;
     margin: 15px 205px;
-    width: 1100px;
+    width: 290px;
     .logo {
       width: 120px;
       height: 55px;
@@ -83,7 +90,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        width: 500px;
         :hover {
           color: #00730c;
           .img2 {
@@ -112,10 +119,11 @@
   button {
     width: 170px;
     height: 50px;
-    background-image: url(../Plants/img/Call_Button.svg);
+    background-image: url(/Plants/img/Call_Button.svg);
     border-radius: 5px;
     border: 0;
     margin-left: 100px;
+    flex-shrink: 0;
   }
   .menu {
     display: none;
@@ -145,7 +153,7 @@
     width: 550px;
     height: 586px;
     margin-left: 5px;
-    font-family: Nunito;
+    font-family: "Nunito";
     .frame_menu_first {
       display: flex;
       align-items: center;
@@ -258,31 +266,34 @@
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-    width: 1200px;
-    .first{
-      margin-bottom: 30px;
-    }
-    .line{
-      display: flex;
-      justify-content: space-between;
-      padding-left: 30px;
-      .green{
-        background-color: #00730C;
-        p{
+    width: 100%;
+    
+    ul{
+      display: flex;      
+      justify-content: center;      
+      flex-wrap: wrap;
+      position: relative;
+      .img_white{
+            display: none;
+          } 
+      :hover{
+          background-color: #00730C;
           color: white;
+          .img_white{
+            display: block;
+            position: absolute;
+          }
         }
-        .img_white{
-          display: none;
-        }
-      }
-      .box{
+      li{
         width: 290px;
         height: 366px;
+        margin: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;        
         box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        
         .text_icon{
           display: flex;
           flex-direction: column;
@@ -292,11 +303,14 @@
           width: 223px;
           height: 247px;
           padding: 0;
-          .img{
-            width: 70px;
-            height: 70px;
-            left: 40px;
-          }
+          // .img_white{
+          //   display: none;
+          // }
+          // .img{
+          //   width: 70px;
+          //   height: 70px;
+          //   left: 40px;
+          // }
           .serv{
             font-family: 'Nunito';
             font-style: normal;
@@ -313,11 +327,13 @@
             line-height: 28px;
             margin-top: 10px;
           }
-        }
+        }    
+      }
+      
       }
     }
   }
-}
+
 .frame2{
   position: relative;
   margin-top: 100px;
@@ -654,26 +670,12 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      .first{
-      margin-bottom: 0px;
-      }
-      .line{
+      
+      ul{
         display: flex;
         flex-direction: column;
-        .green{
-          background-color: white;
-          p{
-            color: black;
-          }
-          .img{
-            display: none;
-          }
-          .img_white{
-            display: block;
-            
-          }
-        }
-        .box{
+        
+        li{
           height: 116px;
           width: 260px;
           
@@ -720,14 +722,14 @@
   .frame2{
     margin-top: 50px;
     display: flex;
-    width: 326px;
+    width: 320px;
     height: 1100px;
     padding: 0;
     .imgi{
       display: none;
     }
     .about_us{
-      width: 326px;
+      width: 320px;
       height: 1100px;
       margin: 0;      
       display: flex;
