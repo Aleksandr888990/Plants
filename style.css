@@ -436,6 +436,95 @@
   border-radius: 5px;
 }
 
+.choose {
+  width: 100%;
+  height: 655px;
+  margin-top: 100px;
+  background-color: #0C4B35;
+  position: relative;
+}
+.choose .back {
+  position: absolute;
+  opacity: 0.5;
+  top: 40px;
+  left: -30px;
+}
+.choose .backm1, .choose .backm2 {
+  display: none;
+}
+.choose .content {
+  width: 1100px;
+  height: 455px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 225px;
+}
+.choose .content img {
+  margin-top: 114px;
+}
+.choose .content .content_and_button {
+  display: flex;
+  flex-direction: column;
+  height: 655px;
+}
+.choose .content .content_and_button .content1 {
+  font-family: "Nunito";
+  color: white;
+  margin-top: 100px;
+}
+.choose .content .content_and_button .content1 h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 30px;
+}
+.choose .content .content_and_button .content1 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  width: 530px;
+}
+.choose .content .content_and_button .content1 ul {
+  margin-top: 50px;
+  width: 500px;
+  height: 86px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.choose .content .content_and_button .content1 ul .move {
+  margin-left: 40px;
+}
+.choose .content .content_and_button .content1 ul .move2 {
+  margin-left: 60px;
+}
+.choose .content .content_and_button .content1 ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+}
+.choose .content .content_and_button .content1 ul li .check {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(/Plants/img/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+.choose .content .content_and_button button {
+  width: 190px;
+  height: 50px;
+  background-image: url(/Plants/img/about_us/Button_about_us.svg);
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
 @media (max-width: 768px) {
   .navbar_top {
     width: 100%;
@@ -633,11 +722,12 @@
     height: 1068px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .services .cards ul {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
   .services .cards ul li {
     height: 116px;
@@ -780,5 +870,90 @@
     margin-top: 30px;
     position: absolute;
     left: 60px;
+  }
+  .choose {
+    height: 700px;
+    width: 320px;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+  }
+  .choose .back {
+    display: none;
+  }
+  .choose .backm1 {
+    display: block;
+    position: absolute;
+    top: 80px;
+  }
+  .choose .backm2 {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .choose .content {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 640px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .choose .content img {
+    width: 285px;
+    margin-top: 0;
+    position: absolute;
+    top: 0px;
+  }
+  .choose .content .content_and_button {
+    width: 300px;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 247px;
+  }
+  .choose .content .content_and_button .content1 {
+    height: 290px;
+    width: 300px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .choose .content .content_and_button .content1 h1 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 15px;
+  }
+  .choose .content .content_and_button .content1 p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 300px;
+  }
+  .choose .content .content_and_button .content1 ul {
+    height: 64px;
+    width: 300px;
+    margin-top: 40px;
+  }
+  .choose .content .content_and_button .content1 ul .move {
+    margin-left: 30px;
+  }
+  .choose .content .content_and_button .content1 ul .move2 {
+    margin-left: 45px;
+  }
+  .choose .content .content_and_button .content1 ul li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .choose .content .content_and_button .content1 ul li .check {
+    width: 18px;
+    height: 18px;
+    background-image: url(/Plants/img/check_small.svg);
+    margin-right: 5px;
+  }
+  .choose .content .content_and_button button {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
